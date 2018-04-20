@@ -112,8 +112,8 @@
 ------------------------*/
 .sp-top-thumbnails .sp-thumbnail-container,
 .sp-bottom-thumbnails .sp-thumbnail-container {
-	margin-left: 2px;
-	margin-right: 2px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .sp-top-thumbnails .sp-thumbnail-container:first-child,
@@ -190,7 +190,7 @@
 	right: 18px;
 }
 
-.sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail:before {
+.sp-left-thumbnails.sp-has-pointer .sp-selected-thumbnail{
 	content: '';
 	position: absolute;
 	height: 100%;
@@ -233,6 +233,7 @@
 	top: 0;
 	margin-top: 13px;
 }
+
 
 .sp-bottom-thumbnails.sp-has-pointer .sp-selected-thumbnail:after {
 	content: '';
@@ -498,7 +499,7 @@
 .sp-previous-arrow{
 	content:' ' !important;
   display: block;
-  background: url(images/arrow_left.png) no-repeat left top;
+  background: url(../images/arrow_left.png) no-repeat left top;
   text-indent: -9999px;
   width: 32px;
   height: 48px;
@@ -506,10 +507,16 @@
 .sp-next-arrow{
 	content:' ' !important;
   display: block;
-  background: url(images/arrow_left.png) no-repeat left top;
+  background: url(../images/arrow_left.png) no-repeat left top;
   text-indent: -9999px;
   width: 32px;
   height: 48px;
+}
+.sp-thumbnails .sp-selected-thumbnail{
+	filter: brightness(100%);
+}
+.sp-thumbnail-container{
+	filter: brightness(50%);
 }
 
 .sp-arrow:before {
@@ -794,6 +801,7 @@ a.sp-video:after {
 	-webkit-transition: none;
 	-o-transition: none;
 }
+
 
 .slider-pro a {
 	position: static;

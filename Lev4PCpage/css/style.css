@@ -18,19 +18,26 @@ header,nav.grobal,#side ul,#menu,#news{
 header img#logo{
   margin: 20px auto 0;
 }
+#logo:hover{opacity: 0.5;}
 .utility{
   float: right;
 }
 .utility p{
   text-align: right;
-  margin: 10px 0 0 0;
+  margin-bottom: 6px;
+  margin-right: 44px;
+  font-size: 70%;
 }
 header form img{
+  margin-top: -0.5px;
+  line-height:24px;
   vertical-align: middle;
 }
+header form img:hover{opacity: 0.5;}
 input[type=text] {
   width:150px;
   height:24px;
+  text-indent: 7px;
 }
 nav.grobal{
   background-color: #202d74;
@@ -50,6 +57,7 @@ nav.grobal ul li{
   vertical-align: middle;
 	border-right: 1px solid #ffffff;
 }
+nav.grobal ul li:hover{opacity: 0.5;}
 nav.grobal ul li:last-child{
   border-right: none;
 }
@@ -68,6 +76,11 @@ nav.grobal ul li a{
   text-align: center;
   vertical-align: middle;
 }
+form div.normal{
+  height: 30px;
+  line-height: 30px;
+}
+
 .next{
   color: #202d74;
   font-size: 80%;
@@ -83,7 +96,7 @@ nav.grobal ul li a{
 }
 #side ul li{
     float: left;
-    margin: 5px auto;
+    margin: 4px auto;
 }
 #side ul li.top{
   width: 350px;
@@ -98,13 +111,14 @@ nav.grobal ul li a{
   text-decoration: underline;
   text-align: center;
 }
+#side ul li.next:hover{opacity: 0.5;}
 #side ul li.blue,li.green,li.sky{
   text-align: center;
-  margin: 5px auto;
   width: 350px;
   height: 50px;
   color: #ffffff;
 }
+#side ul li.blue:hover,li.green:hover,li.sky:hover{opacity: 0.5;}
 #side ul li.blue{
   background-color: #202d74;
   line-height: 50px;
@@ -118,9 +132,9 @@ nav.grobal ul li a{
   text-align: center;
 }
 #side ul li.sky{
+  position: relative;
   width: 108px;
   height: 108px;
-  position: relative;
   margin: 4px;
   background-color: #1e8796;
 }
@@ -137,6 +151,7 @@ nav.grobal ul li a{
   width: 350px;
   margin: 0 0 0 40px;
 }
+#side img:hover{opacity: 0.5;}
 #menu{
   display: block;
   width: 900px;
@@ -173,6 +188,9 @@ nav.grobal ul li a{
   font-size: 130%;
   color: #202d74;
 }
+#menu ul li.next a:hover{
+  opacity: 0.5;
+}
 #news{
   width: 900px;
   height: 610px;
@@ -193,26 +211,36 @@ nav.grobal ul li a{
   background-color: #202d74;
   color: #ffffff;
 }
-dl{
-  margin: 10px 0 0 30px;
-  font-size: 80%
+.news_list{
+  margin-top: 35px;
 }
-dl dt time{
+.news_list ul{
+  margin: 8px 0 0 0;
+  font-size: 90%;
+  list-style-type: none;
+}
+.news_list ul li time{
   display: inline-block;
   width: 130px;
-  height: 30px;
-  margin: 0 10px 20px 10px;
+  height: 25px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px;
 }
-dl dt a{
+.news_list ul li a{
   display: inline-block;
   vertical-align: middle;
   color: #202d74;
   font-size: 100%
 }
-hr {
+.news_list ul li a:hover{
+    opacity: 0.5;
+}
+hr{
   width: 854px;
   height: 3px;
-  margin-left: 0;
+  margin: -16px 0 0 40px;
   background-color: #202d74;
   border: none;
 }
@@ -242,6 +270,7 @@ span{
 	display: inline-block;
 	width: 130px;
 	height: 25px;
+  line-height: 27px;
   text-align: center;
   vertical-align: middle;
   margin: 3px 20px 3px 3px;
@@ -279,6 +308,9 @@ span{
   font-size: 70%;
   color: #202d74;
 }
+#foot_menu ul li a:hover{
+  opacity: 0.5;
+}
 #social{
     margin: 20px;
     text-align: center;
@@ -288,6 +320,9 @@ span{
   font-size: 70%;
   color: #202d74;
   list-style-type: none;
+}
+#social a:hover{
+  opacity: 0.5;
 }
 footer{
   text-align: center;

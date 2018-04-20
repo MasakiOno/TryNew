@@ -4,21 +4,19 @@
   <meta charset="UTF-8" />
   <title>せらく銀行</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/dist/css/slider-pro.css" media="screen">
-  <script src="css/dist/js/jquery.sliderPro.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/slider-pro.css" media="screen">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" id="logo">
+    <img src="images/logo.png" id="logo" alt="">
     <div class="utility">
-      <p><a href="index.html">global site</a> <a href="index.html">site map</a></p>
+      <p><a href="index.html">global site</a>&emsp;&emsp;<a href="index.html">site map</a></p>
       <form action="#">
         <div class="normal">金融機関コード : 0917　文字サイズ　</div>
-        <a href="index.html"><img src="images/fontsize_s.png"></a>
-        <a href="index.html"><img src="images/fontsize_m.png"></a>
-        <a href="index.html"><img src="images/fontsize_l.png"></a>
-        <input type="text" name="search" placeholder="検索ワードを入力"><a href="index.html"><img src="images/search.png"></a>
+        <a href="index.html"><img src="images/fontsize_s.png" alt=""></a>
+        <a href="index.html"><img src="images/fontsize_m.png" alt=""></a>
+        <a href="index.html"><img src="images/fontsize_l.png" alt=""></a>
+        <input type="text" name="search" placeholder="検索ワードを入力"><a href="index.html"><img src="images/search.png" alt=""></a>
       </form>
     </div>
   </header>
@@ -35,52 +33,36 @@
     <div id="simple" class="slider-pro">
       <div class="sp-slides">
         <div class="sp-slide">
-          <img class="sp-image" src="images/main01.png" />
+          <img class="sp-image" src="images/main01.png" alt="">
         </div>
         <div class="sp-slide">
-          <img class="sp-image" src="images/main02.png" />
+          <img class="sp-image" src="images/main02.png" alt="">
         </div>
         <div class="sp-slide">
-          <img class="sp-image" src="images/main03.png" />
+          <img class="sp-image" src="images/main03.png" alt="">
         </div>
       </div>
       <div class="sp-thumbnails">
-        <img class="sp-thumbnail" src="images/main01_thumb.png"/>
-        <img class="sp-thumbnail" src="images/main02_thumb.png"/>
-        <img class="sp-thumbnail" src="images/main03_thumb.png"/>
+        <img class="sp-thumbnail" src="images/main01_thumb.png" alt="">
+        <img class="sp-thumbnail" src="images/main02_thumb.png" alt="">
+        <img class="sp-thumbnail" src="images/main03_thumb.png" alt="">
       </div>
     </div>
-    <script type="text/javascript">
-      $( document ).ready(function( $ ){
-        $('#simple').sliderPro({
-          width: 1260,//横幅
-          height: 400,
-          arrows: true,//左右の矢印
-          fadeArrows: false,
-          buttons: false,//ナビゲーションボタン
-          slideDistance: 0,//スライド同士の距離
-          thumbnailWidth: 420,//サムネイルの横幅
-          thumbnailHeight: 100,//サムネイルの縦幅
-        });
-      });
-    </script>
   </div>
   <div id="contents">
     <div id="side">
       <ul>
         <li class="top">インターネットバンキング</li>
         <li class="normal">せらく銀行インターネットバンキング</li>
-        <li class="blue">ログインサービス</li><br>
-        <li class="green">初めてログインする方</li><br>
-        <li class="next">＞パスワードを忘れた方はこちら</li><br>
-        <li class="top">サービスのご案内</li><br>
+        <li class="blue">ログインサービス</li>
+        <li class="green">初めてログインする方</li>
+        <li class="next"><a href="index.html">＞パスワードを忘れた方はこちら</a></li>
       </ul>
       <ul>
+        <li class="top">サービスのご案内</li>
         <li class="sky"><a href="index.html">店舗<br>・<br>ATM検索</a></li>
         <li class="sky"><a href="index.html">資料請求</a></li>
         <li class="sky"><a href="index.html">金利一覧</a></li>
-      </ul>
-      <ul>
         <li class="sky"><a href="index.html">手数料</a></li>
         <li class="sky"><a href="index.html">よくある<br>ご質問</a></li>
         <li class="sky"><a href="index.html">投資信託基準<br>価格一覧</a></li>
@@ -89,10 +71,12 @@
         <li class="blue">口座開設のご案内</li>
         <li class="blue">金融経済ニュース</li>
         <li class="blue">詐欺に注意！！</li>
+      </ul>
+      <ul>
         <li class="green">テレビCM・動画のご紹介</li>
         <li class="green">今から考える教育ローン</li>
       </ul>
-      <img src="../Data/images/caution.png">
+      <img src="images/caution.png" alt="">
     </div>
     <div id="menu">
       <ul>
@@ -126,67 +110,40 @@
       </ul>
     </div>
     <div id="news">
-      <script type="text/javascript">
-        $(function() {
-        //クリックしたときのファンクションをまとめて指定
-          $('.tab li').click(function() {
-              //.index()を使いクリックされたタブが何番目かを調べ、
-              //indexという変数に代入します。
-              var index = $('.tab li').index(this);
-              //コンテンツを一度すべて非表示にし、
-              $('.news_list dl').css('display','none');
-              //クリックされたタブと同じ順番のコンテンツを表示します。
-              $('.news_list dl').eq(index).css('display','block');
-              //一度タブについているクラスselectを消し、
-              $('.tab li').removeClass('select');
-              //クリックされたタブのみにクラスselectをつけます。
-              $(this).addClass('select');
-              var index = $('.tab li').index(this);
-          });
-          // マウスポインターが画像に乗った時の動作
-          $('.tab li').mouseover(function() {
-            $(this).addClass('select');
-          })
-          // マウスポインターが画像から外れた時の動作
-          $('.tab li').mouseout(function() {
-            $(this).removeClass('select');
-          });
-        });
-      </script>
       <ul class="tab">
         <li class="select">新着情報</li>
         <li>ニュースリリース</li>
         <li>キャンペーン</li>
         <li>お知らせ</li>
-        <hr>
       </ul>
+      <hr>
       <div class="news_list">
-        <dl>
-          <dt><time datetime="2015-06-10">2015年6月10日</time><span class="notice">お知らせ</span><a href="index.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、<br>絶対に入力しないでください！</a></dt>
-          <dt><time datetime="2015-05-10">2015年5月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選で200人に1万円が当たる！夏の資産運用キャンペーン実施中。</a></dt>
-          <dt><time datetime="2015-04-10">2015年4月10日</time><span class="campaign">キャンペーン</span><a href="index.html">平成27年5月25日(月)より｢子供口座開設キャンペーン｣を開始します。</a></dt>
-          <dt><time datetime="2015-03-10">2015年3月10日</time><span class="notice">お知らせ</span><a href="index.html">「年金情報流出」を口実にした振込め詐欺や個人情報の搾取にご注意ください。</a></dt>
-          <dt><time datetime="2015-02-10">2015年2月10日</time><span class="release">ニュースリリース</span><a href="index.html">スウェーデンせらく銀行○○支店開業についてpdf(97KB)</a></dt>
-          <dt><time datetime="2015-01-10">2015年1月10日</time><span class="notice">お知らせ</span><a href="index.html">お客様の情報のSRKグループでの共同利用について</a></dt>
-          <dt><time datetime="2014-12-10">2014年12月10日</time><span class="notice">お知らせ</span><a href="index.html">LINE公式アカウントを開設しました！</a></dt>
-          <dt><time datetime="2014-11-10">2014年11月10日</time><span class="release">ニュースリリース</span><a href="index.html">【せらくダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></dt>
-          <dt><time datetime="2014-10-10">2014年10月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選でカタログギフトが当たる！保険の見直しキャンペーン実施中</a></dt>
-        </dl>
-        <dl class="hide">
-          <dt><time datetime="2015-02-10">2015年2月10日</time><span class="release">ニュースリリース</span><a href="index.html">スウェーデンせらく銀行○○支店開業についてpdf(97KB)</a></dt>
-          <dt><time datetime="2014-11-10">2014年11月10日</time><span class="release">ニュースリリース</span><a href="index.html">【せらくダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></dt>
-        </dl>
-        <dl class="hide">
-          <dt><time datetime="2015-05-10">2015年5月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選で200人に1万円が当たる！夏の資産運用キャンペーン実施中。</a></dt>
-          <dt><time datetime="2015-04-10">2015年4月10日</time><span class="campaign">キャンペーン</span><a href="index.html">平成27年5月25日(月)より｢子供口座開設キャンペーン｣を開始します。</a></dt>
-          <dt><time datetime="2014-10-10">2014年10月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選でカタログギフトが当たる！保険の見直しキャンペーン実施中</a></dt>
-        </dl>
-        <dl class="hide">
-          <dt><time datetime="2015-06-10">2015年6月10日</time><span class="notice">お知らせ</span><a href="index.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、<br>絶対に入力しないでください！</a></dt>
-          <dt><time datetime="2015-03-10">2015年3月10日</time><span class="notice">お知らせ</span><a href="index.html">「年金情報流出」を口実にした振り込めさぎや個人情報の搾取にご注意ください。</a></dt>
-          <dt><time datetime="2015-01-10">2015年1月10日</time><span class="notice">お知らせ</span><a href="index.html">お客様の情報のSRKグループでの共同利用について</a></dt>
-          <dt><time datetime="2014-12-10">2014年12月10日</time><span class="notice">お知らせ</span><a href="index.html">LINE公式アカウントを開設しました！</a></dt>
-        </dl>
+        <ul>
+          <li><time datetime="2015-06-10">2015年6月10日</time><span class="notice">お知らせ</span><a href="index.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、<br>絶対に入力しないでください！</a></li>
+          <li><time datetime="2015-05-10">2015年5月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選で200人に1万円が当たる！夏の資産運用キャンペーン実施中。</a></li>
+          <li><time datetime="2015-04-10">2015年4月10日</time><span class="campaign">キャンペーン</span><a href="index.html">平成27年5月25日(月)より｢子供口座開設キャンペーン｣を開始します。</a></li>
+          <li><time datetime="2015-03-10">2015年3月10日</time><span class="notice">お知らせ</span><a href="index.html">「年金情報流出」を口実にした振込め詐欺や個人情報の搾取にご注意ください。</a></li>
+          <li><time datetime="2015-02-10">2015年2月10日</time><span class="release">ニュースリリース</span><a href="index.html">スウェーデンせらく銀行○○支店開業についてpdf(97KB)</a></li>
+          <li><time datetime="2015-01-10">2015年1月10日</time><span class="notice">お知らせ</span><a href="index.html">お客様の情報のSRKグループでの共同利用について</a></li>
+          <li><time datetime="2014-12-10">2014年12月10日</time><span class="notice">お知らせ</span><a href="index.html">LINE公式アカウントを開設しました！</a></li>
+          <li><time datetime="2014-11-10">2014年11月10日</time><span class="release">ニュースリリース</span><a href="index.html">【せらくダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></li>
+          <li><time datetime="2014-10-10">2014年10月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選でカタログギフトが当たる！保険の見直しキャンペーン実施中</a></li>
+        </ul>
+        <ul class="hide">
+          <li><time datetime="2015-02-10">2015年2月10日</time><span class="release">ニュースリリース</span><a href="index.html">スウェーデンせらく銀行○○支店開業についてpdf(97KB)</a></li>
+          <li><time datetime="2014-11-10">2014年11月10日</time><span class="release">ニュースリリース</span><a href="index.html">【せらくダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></li>
+        </ul>
+        <ul class="hide">
+          <li><time datetime="2015-05-10">2015年5月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選で200人に1万円が当たる！夏の資産運用キャンペーン実施中。</a></li>
+          <li><time datetime="2015-04-10">2015年4月10日</time><span class="campaign">キャンペーン</span><a href="index.html">平成27年5月25日(月)より｢子供口座開設キャンペーン｣を開始します。</a></li>
+          <li><time datetime="2014-10-10">2014年10月10日</time><span class="campaign">キャンペーン</span><a href="index.html">抽選でカタログギフトが当たる！保険の見直しキャンペーン実施中</a></li>
+        </ul>
+        <ul class="hide">
+          <li><time datetime="2015-06-10">2015年6月10日</time><span class="notice">お知らせ</span><a href="index.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、<br>絶対に入力しないでください！</a></li>
+          <li><time datetime="2015-03-10">2015年3月10日</time><span class="notice">お知らせ</span><a href="index.html">「年金情報流出」を口実にした振り込めさぎや個人情報の搾取にご注意ください。</a></li>
+          <li><time datetime="2015-01-10">2015年1月10日</time><span class="notice">お知らせ</span><a href="index.html">お客様の情報のSRKグループでの共同利用について</a></li>
+          <li><time datetime="2014-12-10">2014年12月10日</time><span class="notice">お知らせ</span><a href="index.html">LINE公式アカウントを開設しました！</a></li>
+        </ul>
       </div>
     </div>
     <div id="foot_menu">
@@ -244,5 +201,38 @@
   <footer>
     <small>Copyright&copy;2018 Seraku Banking Corporation.All Rights Reserved.</small>
   </footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
+  <script>
+    $( document ).ready(function( $ ){
+      $('#simple').sliderPro({
+          width: 1260,//横幅
+          height: 400,
+          arrows: true,//左右の矢印
+          fadeArrows: false,
+          buttons: false,//ナビゲーションボタン
+          slideDistance: 0,//スライド同士の距離
+          thumbnailWidth: 420,//サムネイルの横幅
+          thumbnailHeight: 100,//サムネイルの縦幅
+        });
+      });
+    $(function() {
+    //クリックしたときのファンクションをまとめて指定
+      $('.tab li').click(function() {
+          //.index()を使いクリックされたタブが何番目かを調べ、
+          //indexという変数に代入します。
+          var index = $('.tab li').index(this);
+          //コンテンツを一度すべて非表示にし、
+          $('.news_list ul').css('display','none');
+          //クリックされたタブと同じ順番のコンテンツを表示します。
+          $('.news_list ul').eq(index).css('display','block');
+          //一度タブについているクラスselectを消し、
+          $('.tab li').removeClass('select');
+          //クリックされたタブのみにクラスselectをつけます。
+          $(this).addClass('select');
+          var index = $('.tab li').index(this);
+      });
+    });
+  </script>
 </body>
 </html>
