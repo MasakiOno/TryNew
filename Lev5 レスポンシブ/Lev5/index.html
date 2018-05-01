@@ -10,18 +10,19 @@
   </head>
   <body>
     <div id="list_t">
-      <img src="images/SP/miru.png">
-      <img src="images/SP/tsukuru.png">
-      <img class="r_button" src="images/SP/facebook.jpg">
-      <img class="r_button" src="images/SP/twitter.jpg">
-      <img class="r_button" src="images/SP/insta.jpg">
+      <a href="#"><img src="images/SP/miru.png" onmouseover="this.src='images/SP/miru_.png'" onmouseout="this.src='images/SP/miru.png'"></a>
+      <a href="#"><img src="images/SP/tsukuru.png" onmouseover="this.src='images/SP/tsukuru_.png'" onmouseout="this.src='images/SP/tsukuru.png'"></a>
+      <a href="#"><img class="r_button" src="images/SP/facebook.jpg"></a>
+      <a href="#"><img class="r_button" src="images/SP/twitter.jpg"></a>
+      <a href="#"><img class="r_button" src="images/SP/insta.jpg"></a>
+      <img class="line" src="images/SP/line.png">
     </div>
     <div id="list_r">
-      <img src="images/PC/henkan_off.png">
-      <img src="images/PC/tsukuru.png">
-      <img class="r_button" src="images/PC/facebook.png">
-      <img class="r_button" src="images/PC/twitter.png">
-      <img class="r_button" src="images/PC/insta.png">
+      <a href="#"><img src="images/PC/henkan_off.png" onmouseover="this.src='images/PC/henkan_on.png'" onmouseout="this.src='images/PC/henkan_off.png'"></a>
+      <a href="#"><img src="images/PC/tsukuru.png" onmouseover="this.src='images/PC/tsukuru_.png'" onmouseout="this.src='images/PC/tsukuru.png'"></a>
+      <a href="#"><img class="r_button" src="images/PC/facebook.png"></a>
+      <a href="#"><img class="r_button" src="images/PC/twitter.png"></a>
+      <a href="#"><img class="r_button" src="images/PC/insta.png"></a>
     </div>
     <header>
       <div class="lang">
@@ -31,8 +32,8 @@
       <img class="logo" src="images/PC/logo.png" alt="">
       <img class="logo_sp" src="images/SP/logo.png" alt="">
       <div class="lang_mini">
-        <img src="images/PC/JP.jpg" alt="">
-        <img src="images/PC/EN.jpg" alt="">
+        <img class="r_button" src="images/PC/JP.jpg" alt="">
+        <img class="r_button" src="images/PC/EN.jpg" alt="">
       </div>
     </header>
     <ul class="slider1">
@@ -128,14 +129,19 @@
           dots: true,
         });
         $('.slider2').slick({
-          asNavFor: '.thumb',
-        });
-        $('.slider3').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
           asNavFor: '.thumb',
         });
         $('.thumb').slick({
+          infinite: true,
           slidesToShow: 3,
-          asNavFor: '.slider2', //スライダー本体のクラス名
+          slidesToScroll: 1,
+          arrows: true,
+          asNavFor:  '.slider2', //スライダー本体のクラス名
+          focusOnSelect: true,
         });
       });
     </script>

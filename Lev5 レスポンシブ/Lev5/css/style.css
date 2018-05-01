@@ -5,6 +5,9 @@ body{
 header{
   overflow: hidden;
 }
+.r_button:hover{
+  filter: brightness(150%);
+}
 .logo{
   display: block;
   width: 50vw;
@@ -70,6 +73,7 @@ header{
   background: #ec0c00;
   color: #ffffff;
 }
+
 #list_t{
   display: none;
 }
@@ -220,20 +224,6 @@ div.button{
   font-size: 3vw;
   border-radius: 0.7vw;
 }
-.sp-thumbnail-container{
-  background-color: #ffffff;
-  border: solid 1px #ec0c00;
-  border-radius: 5px;
-  color: #ec0c00;
-  margin: 0;
-  text-align: center;
-  vertical-align: middle;
-}
-.sp-selected-thumbnail{
-  background-color: #ec0c00;
-  color: #ffffff;
-  margin: 0;
-}
 #service dl{
   width: 80vw;
   margin: auto 10%;
@@ -287,9 +277,10 @@ br.reg{
 }
 @media screen and ( max-width:599px ){
   header{
-    margin-top: 5vw;
-    padding: 0 0 0 23vw;
+    margin-top: 9vw;
+    padding: 0 0 0 20vw;
   }
+
   .logo{
     display: none;
   }
@@ -354,23 +345,22 @@ br.reg{
   #list_t{
     display: block;
     width: 100vw;
-    height: 10vw;
+    height: 9vw;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #ffffff;
     float: left;
   }
-  #list_t img{
-    width: 7vw;
+  #list_t a img{
+    height: 7vw;
+  }
+  .line{
+    display: block;
+    width: 100vw;
+    height: 4px;
   }
   #list_r{
     display: none;
-  }
-  .slider2{
-    display: none;
-  }
-  .slider3{
-    display: block;
   }
 }
