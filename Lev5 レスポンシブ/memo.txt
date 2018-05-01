@@ -1,0 +1,2 @@
+フッター　画像中央
+element.style
