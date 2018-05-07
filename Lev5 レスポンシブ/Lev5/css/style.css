@@ -53,6 +53,7 @@ ul.slider2{
 .slide-arrow {
   display: block;
   position: absolute;
+  max-width: 39px;
   width: 5vw;
   top: 40%;
   z-index: 60;
@@ -367,6 +368,7 @@ br.reg{
   .slide-arrow {
     display: block;
     position: absolute;
+    max-width: 28px;
     width: 5vw;
     top: 40%;
     z-index: 10;
