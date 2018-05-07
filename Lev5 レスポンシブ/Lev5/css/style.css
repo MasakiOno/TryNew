@@ -9,6 +9,9 @@ header,.step,.picture,.thumb{
 .logo_sp,br.mini,#list_t,.lang_mini{
   display: none;
 }
+.SP{
+  display: none !important;
+}
 .r_button:hover{
   filter: brightness(150%);
 }
@@ -36,15 +39,15 @@ header,.step,.picture,.thumb{
     height: auto;
     margin: 0 auto;
 }
-ul.slider2{
+.slider2{
   display: block;
   position: relative;
   width: 85vw;
   margin: 5vw auto;
   padding: 0;
 }
-.slider2 li a,.PC{
-  display: block;
+.PC{
+  display: block !important;
   max-width: 890px;
   width: 70vw;
   height: auto;
@@ -65,31 +68,31 @@ ul.slider2{
   right: 10px;
 }
 .thumb{
-  display: inline-block;
-  border-radius: 5vw;
+  display: block;
+  max-width: 1080px;
+  width: 76vw;
+  height: 6vw;
+  margin: 0 11vw;
+  padding: 0;
+  border: 1px solid #ec0c00;
+  color: #ec0c00;
+  border-radius: 2vw;
 }
 .thumb li{
-  height: 5vw;
-  line-height: 5vw;
+  display: block;
+  line-height: 5.9vw;
   font-weight: bold;
-  background: #ffffff;
-  border: 1px solid #ec0c00;
   text-align: center;
-  vertical-align: middle;
   font-size: 2vw;
-  color: #ec0c00;
+  border-left: 1px solid #ec0c00;
 }
 .thumb li:hover{
   background: #ec0c00;
   color: #ffffff;
 }
-.thumb :first-child{
-  border-bottom-left-radius: 5vw;
-  border-top-left-radius: 5vw;
-}
-.thumb :last-child{
-  border-bottom-right-radius: 5vw;
-  border-top-right-radius: 5vw;
+.thumb div .slick-track .slick-current div li{
+  background: #ec0c00;
+  color: #ffffff;
 }
 #list_r{
   display: block;
@@ -247,7 +250,6 @@ div.button{
   font-weight: bold;
   margin: 2vw auto;
 }
-
 #service dd img{
   width: 12vw;
   margin: 2vw auto;
@@ -286,13 +288,16 @@ footer p img.seraku{
 br.reg{
   display: inline;
 }
-@media screen and ( max-width:599px ){
+@media only screen and ( max-width:599px ){
   header{
     margin-top: 9vw;
     padding: 0 0 0 20vw;
   }
   .logo,#list_r,.step img.device,br.reg,.lang{
     display: none;
+  }
+  .PC{
+    display: none !important;
   }
   .logo_sp{
     display: inline-block;
@@ -353,18 +358,20 @@ br.reg{
       height: auto;
       margin: 0 auto;
   }
-  ul.slider2{
+  .slider2{
     display: block;
     position: relative;
     width: 85vw;
     margin: 5vw auto;
     padding: 0;
   }
-  /*.SP{
-    display: block;
+  .SP{
+    display: block !important;
+    max-width: 600px;
     width: 70vw;
     height: auto;
-  }*/
+    margin: 0 auto;
+  }
   .slide-arrow {
     display: block;
     position: absolute;
@@ -456,5 +463,28 @@ br.reg{
     display: block;
     width: 100vw;
     height: 4px;
+  }
+  .thumb{
+    display: block;
+    width: 500px;
+    height: 70px;
+    margin: 0 10px;
+    padding: 0;
+  }
+  .thumb li{
+    line-height: 70px;
+    font-weight: bold;
+    border: 1px solid #ec0c00;
+    text-align: center;
+    font-size: 15px;
+    color: #ec0c00;
+  }
+  .thumb li:hover{
+    background: #ec0c00;
+    color: #ffffff;
+  }
+  .thumb div .slick-track .slick-current div li{
+    background: #ec0c00;
+    color: #ffffff;
   }
 }

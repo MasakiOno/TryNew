@@ -69,9 +69,12 @@
      <li>豊富なアイテム</li>
     </ul>
     <ul class="slider2">
-     <li><a href="#"><img class="PC" src="images/PC/slider1.png"><!--img class="SP" src="images/SP/slider1.png"--></a></li>
-     <li><a href="#"><img class="PC" src="images/PC/slider2.png"><!--img class="SP" src="images/SP/slider2.png"--></a></li>
-     <li><a href="#"><img class="PC" src="images/PC/slider3.png"><!--img class="SP" src="images/SP/slider3.png"--></a></li>
+     <li><a href="#"><img class="PC" src="images/PC/slider1.png">
+       <img class="SP" src="images/SP/slider1.png"></a></li>
+     <li><a href="#"><img class="PC" src="images/PC/slider2.png">
+       <img class="SP" src="images/SP/slider2.png"></a></li>
+     <li><a href="#"><img class="PC" src="images/PC/slider3.png">
+       <img class="SP" src="images/SP/slider3.png"></a></li>
     </ul>
     <div id="open">
       <div class="title title-border">OPEN!</div>
@@ -146,26 +149,15 @@
                  nextArrow: '<img src="images/SP/arrow_right.png" class="slide-arrow next-arrow">',
                }
              }]
-          });
+           });
           $('.thumb').slick({
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            asNavFor:  '.slider2',
+            asNavFor: '.slider2,.slider3',
             focusOnSelect: true,
           });
         });
-        /*$(function slideHuck(){
-          var w = $(window).width();
-          var size = 600;
-          if (w <= size) {
-            $("#slider3").slick();
-            $("#slider2").unslick();
-          } else {
-            $("#slider2").slick();
-            $("#slider3").unslick();
-          }
-        });*/
       });
     </script>
 
