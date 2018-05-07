@@ -2,108 +2,103 @@
 body{
   font-family: "メイリオ", sans-serif;
 }
-header{
+header,.step,.picture,.thumb{
   overflow: hidden;
 }
 .r_button:hover{
-  filter: brightness(150%);
+  filter: brightness(150Vw);
 }
 .logo{
   display: block;
-  width: 50vw;
+  width: 50Vw;
   text-align: center;
-  margin: 6vw auto 0 auto;
+  margin: 6Vw auto 0 25Vw;
 }
-.logo_sp{
+.logo_sp,br.mini,#list_t,.lang_mini{
   display: none;
 }
 .lang{
   display: block;
-  margin-right: 7vw;
+  margin-right: 7Vw;
 }
 .lang img{
   display: block;
-  width: 5vw;
+  width: 5Vw;
   float: right;
-  margin: 0 0 0 1.5vw;
+  margin: 0 0 0 1.5Vw;
 }
-.lang_mini{
-  display: none;
-}
-/*左右の矢印の色を変える*/
-.slick-prev:before,
-.slick-next:before {
-    color: #000;
-}
-/*左右の矢印の位置を変える*/
-.slick-next {
-    right: 20px;
-    z-index: 99;
-}
-.slick-prev {
-     left: 15px;
-    z-index: 100;
-}
-/*スライド数のドットの色を変える*/
-.slick-dots li.slick-active button:before,
-.slick-dots li button:before {
-    width: 10px;
-    height: 10px;
-    color: #fff;
-}
-/*スライド画像の横幅可変*/
-.slider1 li a img,.slider2 li a img,.slider3 li a img {
-    width: 80vw;
+.slider1 li a img{
+    max-width: 890px;
+    width: 70Vw;
     height: auto;
+    margin: 0 auto;
+}
+.slider2 li a img{
+  max-width: 1000px;
+  width: 70Vw;
+  height: auto;
+}
+.slider1{
+  margin: auto;
 }
 .slider2{
-  display: block;
+  margin: 0 5Vw 0 10Vw;
 }
-.slider3{
-  display: none;
+.thumb{
+  display: inline-block;
+  border-radius: 5Vw;
 }
 .thumb li{
-  display: block;
-  width: 10vw;
+  display: inline-block;
+  height: 5Vw;
+  line-height: 5Vw;
+  font-weight: bold;
   background: #ffffff;
   border: 1px solid #ec0c00;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2Vw;
   color: #ec0c00;
+}
+.thumb :first-child{
+  border-bottom-left-radius: 5Vw;
+  border-top-left-radius: 5Vw;
+}
+.thumb :last-child{
+  border-bottom-right-radius: 5Vw;
+  border-top-right-radius: 5Vw;
 }
 .thumb li:hover{
   background: #ec0c00;
   color: #ffffff;
 }
-
-#list_t{
-  display: none;
-}
 #list_r{
   display: block;
-  width: 5vw;
+  width: 5Vw;
   position: fixed;
-  top: 20vw;
-  left: 92vw;
+  top: 20Vw;
+  left: 92Vw;
 }
 #list_r img{
-  width: 4vw;
+  width: 4Vw;
 }
 #about{
   text-align: center;
 }
 #about img{
-  height: 17vw;
+  height: 17Vw;
 }
 .what{
-  font-size: 3vw;
+  font-size: 3Vw;
   font-weight: bold;
 }
 .what span{
-  font-size: 5vw;
+  font-size: 5Vw;
   font-weight: bold;
 }
 .title{
   display: block;
-  font-size: 3.5vw;
+  font-size: 3.5Vw;
   margin: 0;
   font-weight: 900;
   background-color: #ffffff;
@@ -122,60 +117,59 @@ header{
   flex-grow: 1;
 }
 .title-border:before {
-  margin-right: 1vw;
-  margin-left: 8vw;
+  margin-right: 1Vw;
+  margin-left: 8Vw;
 }
 .title-border:after {
-  margin-left: 1vw;
-  margin-right: 8vw;
+  margin-left: 1Vw;
+  margin-right: 8Vw;
 }
 .sub_title{
-  font-size: 1.5vw;
-  margin-bottom: 2vw;
+  font-size: 1.5Vw;
+  margin-bottom: 2Vw;
   font-weight: bold;
   color: #e1c800;
   text-align: center;
 }
 .normal{
-  font-size: 1.6vw;
+  font-size: 1.6Vw;
 }
 .picture{
   display: inline-block;
-  overflow: hidden;
 }
 .left{
   float: left;
-  margin: 3vw;
+  margin: 3Vw;
 }
 .convert{
-  width: 80vw;
-  margin: 2vw auto;
-  padding: 2vw;
+  width: 80Vw;
+  margin: 2Vw auto;
+  padding: 2Vw;
   background-color: #c4dded;
-  font-size: 2.5vw;
+  font-size: 2.5Vw;
   font-weight: bold;
   color: #ec0c00;
 }
 .convert form span.button{
-  font-size: 2vw;
+  font-size: 2Vw;
 }
 input[type=text]{
-  width: 25vw;
-  height: 3.7vw;
+  width: 25Vw;
+  height: 3.7Vw;
   vertical-align: middle;
-  border-radius: 0.7vw;
+  border-radius: 0.7Vw;
 }
 span.button{
   display: inline-block;
-  width: 10vw;
-  height: 3.7vw;
-  line-height: 3.7vw;
+  width: 10Vw;
+  height: 3.7Vw;
+  line-height: 3.7Vw;
   background-color: #ec0c00;
   color: #ffffff;
   font-weight:normal;
   vertical-align: middle;
-  font-size: 1vw;
-  border-radius: 0.7vw;
+  font-size: 1Vw;
+  border-radius: 0.7Vw;
 }
 #open{
   text-align: center;
@@ -184,168 +178,154 @@ span.button{
   font-weight: bolder;
 }
 .open1{
-  height: 10vw;
-  margin: 3vw auto;
+  height: 10Vw;
+  margin: 3Vw auto;
 }
 .hane{
-  height: 10vw;
-  margin: 3vw auto;
+  height: 10Vw;
+  margin: 3Vw auto;
 }
 .item{
-  height: 20vw;
-  margin: 2vw auto;
+  height: 20Vw;
+  margin: 2Vw auto;
 }
 .step{
-  overflow: hidden;
-  width: 80vw;
-  margin: auto 5vw;
+  width: 80Vw;
+  margin: auto 5Vw;
 }
 .step img.device{
   display: block;
-  margin: 0 2vw 2vw 2vw;
-  width: 30vw;
+  margin: 0 2Vw 2Vw 2Vw;
+  width: 30Vw;
 }
 .step img{
   float: left;
-  width: 14vw;
-  margin: 0.5vw;
+  width: 14Vw;
+  margin: 0.5Vw;
 }
 div.button{
   display: inline-block;
-  width: 44vw;
-  height: 5vw;
-  line-height: 5vw;
-  margin: 2vw 0.5vw;
+  width: 44Vw;
+  height: 5Vw;
+  line-height: 5Vw;
+  margin: 2Vw 0.5Vw;
   background-color: #ec0c00;
   color: #ffffff;
   font-weight:normal;
   text-align: center;
   vertical-align: middle;
-  font-size: 3vw;
-  border-radius: 0.7vw;
+  font-size: 3Vw;
+  border-radius: 0.7Vw;
 }
 #service dl{
-  width: 80vw;
-  margin: auto 10%;
+  width: 80Vw;
+  margin: auto 10Vw;
 }
 #service dt{
   border-bottom: 1px solid #000000;
-  font-size: 2vw;
+  font-size: 2Vw;
   font-weight: bold;
-  margin: 2vw auto;
+  margin: 2Vw auto;
 }
 #service dd img{
-  width: 12vw;
-  margin: 2vw auto;
+  width: 12Vw;
+  margin: 2Vw auto;
 }
 footer{
 }
 footer p{
   display: block;
-  width: 50vw;
-  height: 12vw;
-  margin-left: 25vw;
+  width: 50Vw;
+  height: 12Vw;
+  margin-left: 25Vw;
 }
 footer p span{
   display: inline-block;
-  width: 10vw;
-  line-height: 10vw;
-  font-size: 2vw;
+  width: 10Vw;
+  line-height: 10Vw;
+  font-size: 2Vw;
   text-align: center;
   vertical-align: middle;
 }
 .pic{
   display: inline-block;
-  width: 40vw;
-  line-height: 10vw;
-  font-size: 2vw;
+  width: 40Vw;
+  line-height: 10Vw;
+  font-size: 2Vw;
   text-align: center;
   vertical-align: middle;
 }
 footer p span img{
   display: inline-block;
-  line-height: 10vw;
-  width: 20vw;
+  line-height: 10Vw;
+  width: 20Vw;
 }
 footer p img.seraku{
-}
-br.mini{
-  display: none;
 }
 br.reg{
   display: inline;
 }
 @media screen and ( max-width:599px ){
   header{
-    margin-top: 9vw;
-    padding: 0 0 0 20vw;
+    margin-top: 9Vw;
+    padding: 0 0 0 20Vw;
   }
-
-  .logo{
+  .logo,#list_r,.step,img.devicebr,.reg,.lang{
     display: none;
   }
   .logo_sp{
     display: inline-block;
-    width: 50vw;
-    margin-top: 5vw;
+    width: 50Vw;
+    margin-top: 5Vw;
     float: left;
   }
   .lang_mini{
     display: inline-block;
-    width: 20vw;
+    width: 20Vw;
   }
   .lang_mini img{
     display: inline-block;
     float: left;
-    width: 8vw;
-    margin-top: 8vw;
-    margin-left: 1vw;
-  }
-  .lang{
-    display: none;
+    width: 8Vw;
+    margin-top: 8Vw;
+    margin-left: 1Vw;
   }
   .normal{
-    font-size: 2.2vw;
+    font-size: 2.2Vw;
   }
   br.mini{
     display: inline;
   }
-  br.reg{
-    display: none;
-  }
   .step{
     overflow: hidden;
-    width: 94vw;
-    margin: auto 3vw;
-  }
-  .step img.device{
-    display: none;
+    width: 94Vw;
+    margin: auto 3Vw;
   }
   .step img{
     float: left;
-    width: 28.5vw;
-    margin: 1vw;
+    width: 28.5Vw;
+    margin: 1Vw;
   }
   div.button{
     display: inline-block;
-    width: 90vw;
-    height:10vw;
-    line-height: 10vw;
+    width: 90Vw;
+    height:10Vw;
+    line-height: 10Vw;
     background-color: #ec0c00;
-    margin-bottom: 7vw;
+    margin-bottom: 7Vw;
     color: #ffffff;
     font-weight:normal;
     text-align: center;
-    font-size: 5vw;
+    font-size: 5Vw;
     border-radius: 5px;
   }
   #about img{
-    height: 23vw;
+    height: 23Vw;
   }
   #list_t{
     display: block;
-    width: 100vw;
-    height: 9vw;
+    width: 100Vw;
+    height: 9Vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -353,14 +333,11 @@ br.reg{
     float: left;
   }
   #list_t a img{
-    height: 7vw;
+    height: 7Vw;
   }
   .line{
     display: block;
-    width: 100vw;
+    width: 100Vw;
     height: 4px;
-  }
-  #list_r{
-    display: none;
   }
 }

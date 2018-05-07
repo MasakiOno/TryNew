@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>MyJapaneseName</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen">
@@ -73,11 +73,11 @@
      <li><a href="#"><img src="images/PC/slider2.png"></a></li>
      <li><a href="#"><img src="images/PC/slider3.png"></a></li>
     </ul>
-    <ul class="slider3">
+    <!--<ul class="slider3">
      <li><a href="#"><img src="images/SP/slider1.png"></a></li>
      <li><a href="#"><img src="images/SP/slider2.png"></a></li>
      <li><a href="#"><img src="images/SP/slider3.png"></a></li>
-    </ul>
+   </ul>-->
     <div id="open">
       <div class="title title-border">OPEN!</div>
       <div class="sub_title">お店オープン！</div>
@@ -122,16 +122,27 @@
       <p><span>協賛</span><span class="pic"><img src="images/PC/tokyo.jpg" alt=""><img src="images/PC/emblem.jpg" alt=""></span></p>
     </footer>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script>
       $(document).ready(function(){
+        $(function() {
         $('.slider1').slick({
+          autoplay: true,
+          autoplayspeed: 3000,
           arrows: false,
           dots: true,
+          infinite: true
         });
+
         $('.slider2').slick({
           infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
+          autoplay: true,
+          arrows: true,
+          prevArrow: '<img src="images/PC/arrow_left.png" class="slide-arrow prev-arrow">',
+          nextArrow: '<img src="images/PC/arrow_right.png" class="slide-arrow next-arrow">',
+          infinite: true,
           fade: true,
           asNavFor: '.thumb',
         });
@@ -139,12 +150,43 @@
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 1,
-          arrows: true,
           asNavFor:  '.slider2', //スライダー本体のクラス名
           focusOnSelect: true,
         });
+
+        /*$(function(){
+          var slider = "#slider2";
+          var thumbnailItem = "#thumbnail-list .thumbnail-item";
+          $(thumbnailItem).each(function(){
+            var index = $(thumbnailItem).index(this);
+            $(this).attr("data-index",index);
+          });
+          $(slider).on('init',function(slick){
+            var index = $(".slide-item.slick-slide.slick-current").attr("data-slick-index");
+            $(thumbnailItem+'[data-index="'+index+'"]').addClass("thumbnail-current");
+          });
+          $(slider).slick({
+            autoplay: true,
+            arrows: true,
+            prevArrow: '<img src="images_pc/arrow_left.png" class="slide-arrow prev-arrow">',
+            nextArrow: '<img src="images_pc/arrow_right.png" class="slide-arrow next-arrow">',
+            infinite: true
+          });
+          $(thumbnailItem).on('click',function(){
+            var index = $(this).attr("data-index");
+            $(slider).slick("slickGoTo",index,false);
+          });
+          $(slider).on('beforeChange',function(event,slick, currentSlide,nextSlide){
+            $(thumbnailItem).each(function(){
+            $(this).removeClass("thumbnail-current")
+            .removeClass("filter").css("background-color", "white").css("color", "red");
+          });
+          $(thumbnailItem+'[data-index="'+nextSlide+'"]')
+            .addClass("thumbnail-current").removeClass("filter").css("background-color", "red").css("color", "white");
+          });*/
+        });
       });
     </script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
+
   </body>
 </html>
