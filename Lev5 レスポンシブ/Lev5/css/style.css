@@ -17,9 +17,10 @@ header,.step,.picture,.thumb{
 }
 .logo{
   display: block;
+  max-width: 543px;
   width: 50vw;
   text-align: center;
-  margin: 6vw auto 0 25vw;
+  margin: 6vw auto 0;
 }
 .lang{
   display: block;
