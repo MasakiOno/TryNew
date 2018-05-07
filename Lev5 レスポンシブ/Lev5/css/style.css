@@ -1,6 +1,7 @@
 @charset "utf-8"
 body{
   font-family: "メイリオ", sans-serif;
+  overflow: hidden;
 }
 header,.step,.picture,.thumb{
   overflow: hidden;
@@ -35,10 +36,31 @@ header,.step,.picture,.thumb{
     height: auto;
     margin: 0 auto;
 }
-.slider2 li a img{
+ul.slider2{
+  display: block;
+  position: relative;
+  width: 85vw;
+  margin: 5vw auto;
+  padding: 0;
+}
+.slider2 li a,.PC{
+  display: block;
   max-width: 890px;
   width: 70vw;
   height: auto;
+  margin: 0 auto;
+}
+.slide-arrow {
+  display: block;
+  position: absolute;
+  top: 40%;
+  z-index: 60;
+}
+.prev-arrow {
+  left: 10px;
+}
+.next-arrow {
+  right: 10px;
 }
 .thumb{
   display: inline-block;
@@ -267,7 +289,7 @@ br.reg{
     margin-top: 9vw;
     padding: 0 0 0 20vw;
   }
-  .logo,#list_r,.step,img.devicebr,.reg,.lang{
+  .logo,#list_r,.step img.device,br.reg,.lang{
     display: none;
   }
   .logo_sp{
@@ -329,10 +351,29 @@ br.reg{
       height: auto;
       margin: 0 auto;
   }
-  .slider2 li a img{
-    max-width: 890px;
-    width: 100vw;
+  ul.slider2{
+    display: block;
+    position: relative;
+    width: 85vw;
+    margin: 5vw auto;
+    padding: 0;
+  }
+  /*.SP{
+    display: block;
+    width: 70vw;
     height: auto;
+  }*/
+  .slide-arrow {
+    display: block;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+  }
+  .prev-arrow {
+    left: 0;
+  }
+  .next-arrow {
+    right: 0;
   }
   .title-border {
     display: flex;

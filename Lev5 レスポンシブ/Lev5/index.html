@@ -69,15 +69,10 @@
      <li>豊富なアイテム</li>
     </ul>
     <ul class="slider2">
-     <li><a href="#"><img src="images/PC/slider1.png"></a></li>
-     <li><a href="#"><img src="images/PC/slider2.png"></a></li>
-     <li><a href="#"><img src="images/PC/slider3.png"></a></li>
+     <li><a href="#"><img class="PC" src="images/PC/slider1.png"><!--img class="SP" src="images/SP/slider1.png"--></a></li>
+     <li><a href="#"><img class="PC" src="images/PC/slider2.png"><!--img class="SP" src="images/SP/slider2.png"--></a></li>
+     <li><a href="#"><img class="PC" src="images/PC/slider3.png"><!--img class="SP" src="images/SP/slider3.png"--></a></li>
     </ul>
-    <!--<ul class="slider3">
-     <li><a href="#"><img src="images/SP/slider1.png"></a></li>
-     <li><a href="#"><img src="images/SP/slider2.png"></a></li>
-     <li><a href="#"><img src="images/SP/slider3.png"></a></li>
-   </ul>-->
     <div id="open">
       <div class="title title-border">OPEN!</div>
       <div class="sub_title">お店オープン！</div>
@@ -136,14 +131,21 @@
           $('.slider2').slick({
             infinite: true,
             slidesToShow: 1,
-            slidesToScroll: 1,
             autoplay: true,
+            autoplayspeed: 3000,
             arrows: true,
             prevArrow: '<img src="images/PC/arrow_left.png" class="slide-arrow prev-arrow">',
             nextArrow: '<img src="images/PC/arrow_right.png" class="slide-arrow next-arrow">',
             infinite: true,
             fade: true,
             asNavFor: '.thumb',
+            responsive: [{
+               breakpoint: 599,
+               settings: {
+                 prevArrow: '<img src="images/SP/arrow_left.png" class="slide-arrow prev-arrow">',
+                 nextArrow: '<img src="images/SP/arrow_right.png" class="slide-arrow next-arrow">',
+               }
+             }]
           });
           $('.thumb').slick({
             infinite: true,
@@ -153,6 +155,17 @@
             focusOnSelect: true,
           });
         });
+        /*$(function slideHuck(){
+          var w = $(window).width();
+          var size = 600;
+          if (w <= size) {
+            $("#slider3").slick();
+            $("#slider2").unslick();
+          } else {
+            $("#slider2").slick();
+            $("#slider3").unslick();
+          }
+        });*/
       });
     </script>
 
