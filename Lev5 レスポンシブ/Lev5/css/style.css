@@ -255,8 +255,6 @@ div.button{
   width: 12vw;
   margin: 2vw auto;
 }
-footer{
-}
 footer p{
   display: block;
   width: 50vw;
@@ -288,6 +286,9 @@ footer p img.seraku{
 }
 br.reg{
   display: inline;
+}
+.thumb .slick-list .slick-track{
+  transform: translate3d(0, 0, 0) !important;
 }
 @media only screen and ( max-width:599px ){
   header{
