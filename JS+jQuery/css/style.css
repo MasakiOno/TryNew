@@ -30,7 +30,7 @@ body{
   display: block;
   height: 300px;
   margin-top: 5px;
-  background-color: #ccc;
+  background-color: #aaa;
 }
 
 /*課題1　スムーススクロール*/
@@ -244,4 +244,32 @@ nav.Hamb.active {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+/*課題7*/
+.tab{
+  overflow:hidden;
+  margin: 0 auto;
+}
+.tab li{
+  background:#ccc;
+  padding:5px 25px;
+  float:left;
+  margin-right:1px;
+  list-style: none;
+}
+.tab li.select{
+  background:#eee;
+}
+.content{
+  margin: 0 auto;
+}
+.content li{
+  width: 600px;
+  height: 200px;
+  background:#eee;
+  list-style: none;
+ }
+.hide {
+  display:none;
 }

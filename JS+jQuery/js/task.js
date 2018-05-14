@@ -9,7 +9,6 @@ $(function(){
     return false;
   });
 });
-
 /*課題2*/
 $(function(){
   $('#accordion > dd').hide();
@@ -29,13 +28,33 @@ $(function(){
 });
 /*課題4*/
 $(function() {
-    $('.HambTog').click(function() {
-        $(this).toggleClass('active');
+  $('.HambTog').click(function() {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+      $('.Hamb').addClass('active');
+    } else {
+      $('.Hamb').removeClass('active');
+    }
+  });
+});
+/*課題5*/
+$(function() {
+  $().click(function () {
+    if ($(".Mac:first").is(":hidden")) {
+      $(".Mac").slideDown("slow");
+    } else {
+      $(".Mac").hide();
+    }
+  });
+});
 
-        if ($(this).hasClass('active')) {
-            $('.Hamb').addClass('active');
-        } else {
-            $('.Hamb').removeClass('active');
-        }
-    });
+/*課題7*/
+$(function() {
+	$('.tab li').click(function() {
+		var index = $('.tab li').index(this);
+		$('.content li').css('display','none');
+		$('.content li').eq(index).css('display','block');
+		$('.tab li').removeClass('select');
+		$(this).addClass('select')
+	});
 });
