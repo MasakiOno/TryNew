@@ -1,0 +1,247 @@
+body{
+  width: 1080px;
+}
+
+#main{
+
+}
+#contents1{
+  display: block;
+  height: 300px;
+  margin-top: 5px;
+  background-color: #ccc;
+}
+
+#contents2{
+  display: block;
+  height: 100px;
+  margin-top: 5px;
+  background-color: #ccc;
+}
+
+#contents3{
+  display: block;
+  height: 300px;
+  margin-top: 5px;
+  background-color: #ccc;
+}
+
+#contents4{
+  display: block;
+  height: 300px;
+  margin-top: 5px;
+  background-color: #ccc;
+}
+
+/*課題1　スムーススクロール*/
+#uptop{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  background-color: #263;
+}
+
+.textarea{
+  display: block;
+  width: 150px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+
+/*課題２ アコーディオン*/
+#accordion {
+  width: 500px;
+}
+
+#accordion dt {
+  border-bottom: solid 1px white;
+  background-color: #000CD4;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#accordion dd {
+  border: solid 1px Silver;
+  margin: 0px;
+  padding: 10px;
+}
+
+/*課題3　モーダルウィンドウ*/
+#modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:120%;
+	margin:0 auto;
+	padding:10px 20px;
+	border:2px solid #aaa;
+	background-color:rgba(0,0,0,0.6);
+	z-index:100;
+}
+#modal_contents{
+  position:fixed;
+  top:20%;
+  left:20%;
+  width: 60%;
+  height: 60%;
+  text-align: center;
+  background-color: #fff;
+}
+#modal_button{
+  width: 200px;
+  font-size: 20px;
+  background-color: #aaa;
+}
+#modal_button:hover{
+  color:#f0f;
+  cursor: pointer;
+}
+#modal_close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+}
+#modal_close:hover{
+  background: #ccc;
+  cursor: pointer;
+}
+
+.css-cancel{
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 4px;
+  height: 20px;
+  background: #000;
+  transform: rotate(45deg);
+}
+
+.css-cancel:before{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 20px;
+  height: 4px;
+  margin-top: -2px;
+  background: #000;
+}
+
+/*課題4*/
+nav.Hamb {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+}
+
+nav.Hamb ul {
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+nav.Hamb ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #d00;
+}
+
+nav.Hamb ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+nav.Hamb ul li a {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+}
+
+nav.Hamb.active {
+    transform: translateY(0%);
+}
+
+.HambTog {
+    display: block;
+    position: fixed;
+    right: 13px;
+    top: 12px;
+    width: 42px;
+    height: 51px;
+    cursor: pointer;
+    z-index: 3;
+    background: #666;
+    text-align: center;
+}
+
+.HambTog span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #eee;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+
+.HambTog span:nth-child(1) {
+    top: 9px;
+}
+
+.HambTog span:nth-child(2) {
+    top: 18px;
+}
+
+.HambTog span:nth-child(3) {
+    top: 27px;
+}
+
+.HambTog span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+
+.HambTog.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.HambTog.active span:nth-child(2),
+.HambTog.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
