@@ -43,7 +43,9 @@ body{
   vertical-align: middle;
   color: #fff;
 }
-
+.textarea:hover{
+  cursor: pointer;
+}
 /*課題２ アコーディオン*/
 #accordion {
   width: 500px;

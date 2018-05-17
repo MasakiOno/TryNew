@@ -61,8 +61,9 @@ $(function() {
 $(function(){
   $.getJSON("json/task.json", {name: "chara"}, function(data){
   	var dat = data.charas;
-
+    $(".nameData").append("<table><tr>");
   	$.each(dat, function(i){
-  		$(".nameData").append("<p>id: " + dat[i].id + "　キャスト: " + dat[i].chara + "　　(CV: " + dat[i].cv + ")</p>");
-  	});
+      $(".nameData").append("<td>id: " + dat[i].id + "　キャスト: " + dat[i].chara + "　　(CV: " + dat[i].cv + ")</td>");
+    });
+    $(".nameData").append("</tr></table>");
   });  });
