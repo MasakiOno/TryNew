@@ -46,7 +46,6 @@ $(function(){
 });
 /*課題6*/
 
-
 /*課題7*/
 $(function() {
 	$('.tab li').click(function() {
@@ -58,3 +57,12 @@ $(function() {
 		$(this).addClass('tab_select');
 	});
 });
+/*課題8*/
+$(function(){
+  $.getJSON("json/task.json", {name: "chara"}, function(data){
+  	var dat = data.charas;
+
+  	$.each(dat, function(i){
+  		$(".nameData").append("<p>id: " + dat[i].id + "　キャスト: " + dat[i].chara + "　　(CV: " + dat[i].cv + ")</p>");
+  	});
+  });  });
