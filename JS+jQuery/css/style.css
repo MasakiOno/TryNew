@@ -337,7 +337,14 @@ nav.Hamb.active {
 .carousel-indicators li{
     border: 1px solid #333;
 }
+.carousel-indicators li{
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
 .carousel-indicators .active {
+  width: 20px;
+  height: 20px;
     background-color: #333;
 }
 
