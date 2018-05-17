@@ -1,34 +1,30 @@
 body{
   width: 1080px;
 }
-
 #main{
 
 }
 #contents1{
   display: block;
-  height: 300px;
+  height: 500px;
   margin-top: 5px;
   background-color: #ccc;
 }
-
 #contents2{
   display: block;
-  height: 100px;
+  height:200px;
   margin-top: 5px;
   background-color: #ccc;
 }
-
 #contents3{
   display: block;
   height: 300px;
   margin-top: 5px;
   background-color: #ccc;
 }
-
 #contents4{
   display: block;
-  height: 300px;
+  height: 500px;
   margin-top: 5px;
   background-color: #aaa;
 }
@@ -43,7 +39,6 @@ body{
   text-align: center;
   background-color: #263;
 }
-
 .textarea{
   display: block;
   width: 150px;
@@ -58,7 +53,6 @@ body{
 #accordion {
   width: 500px;
 }
-
 #accordion dt {
   border-bottom: solid 1px white;
   background-color: #000CD4;
@@ -67,7 +61,6 @@ body{
   padding: 10px;
   font-weight: bold;
 }
-
 #accordion dd {
   border: solid 1px Silver;
   margin: 0px;
@@ -118,7 +111,6 @@ body{
   background: #ccc;
   cursor: pointer;
 }
-
 .css-cancel{
   display: inline-block;
   position: relative;
@@ -129,7 +121,6 @@ body{
   background: #000;
   transform: rotate(45deg);
 }
-
 .css-cancel:before{
   display: block;
   content: "";
@@ -155,14 +146,12 @@ nav.Hamb {
     transition: all 0.6s;
     width: 100%;
 }
-
 nav.Hamb ul {
     background: #ccc;
     margin: 0 auto;
     padding: 0;
     width: 100%;
 }
-
 nav.Hamb ul li {
     font-size: 1.1em;
     list-style-type: none;
@@ -170,22 +159,18 @@ nav.Hamb ul li {
     width: 100%;
     border-bottom: 1px solid #d00;
 }
-
 nav.Hamb ul li:last-child {
     padding-bottom: 0;
     border-bottom: none;
 }
-
 nav.Hamb ul li a {
     display: block;
     color: #000;
     padding: 1em 0;
 }
-
 nav.Hamb.active {
     transform: translateY(0%);
 }
-
 .HambTog {
     display: block;
     position: fixed;
@@ -198,7 +183,6 @@ nav.Hamb.active {
     background: #666;
     text-align: center;
 }
-
 .HambTog span {
     display: block;
     position: absolute;
@@ -209,19 +193,15 @@ nav.Hamb.active {
     transition: .35s ease-in-out;
     left: 6px;
 }
-
 .HambTog span:nth-child(1) {
     top: 9px;
 }
-
 .HambTog span:nth-child(2) {
     top: 18px;
 }
-
 .HambTog span:nth-child(3) {
     top: 27px;
 }
-
 .HambTog span:nth-child(4) {
     border: none;
     color: #eee;
@@ -229,7 +209,6 @@ nav.Hamb.active {
     font-weight: bold;
     top: 34px;
 }
-
 .HambTog.active span:nth-child(1) {
     top: 18px;
     left: 6px;
@@ -237,13 +216,109 @@ nav.Hamb.active {
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
 .HambTog.active span:nth-child(2),
 .HambTog.active span:nth-child(3) {
     top: 18px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+/*課題5*/
+.Mega {
+  width: 90%;
+  margin: 0 auto 0 0;
+  background: #e9e9e9;
+}
+.menu > ul {
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul:after {
+  clear: both;
+}
+.menu > ul > li {
+  float: left;
+  background: #e9e9e9;
+  padding: 0;
+  margin: 0;
+}
+.menu > ul > li a {
+  text-decoration: none;
+  padding: 1.5em 3em;
+  display: block;
+}
+.menu > ul > li:hover {
+  background: #f0f0f0;
+}
+.menu > ul > li > ul {
+  display: none;
+  width: 100%;
+  background: #f0f0f0;
+  padding: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 25%;
+  background: none;
+  float: left;
+}
+.menu > ul > li > ul > li a {
+  color: #777;
+  padding: .2em 0;
+  width: 95%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  font-size: .8em;
+}
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;
 }
 
 /*課題7*/

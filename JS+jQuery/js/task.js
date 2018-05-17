@@ -27,7 +27,7 @@ $(function(){
   });
 });
 /*課題4*/
-$(function() {
+$(function(){
   $('.HambTog').click(function() {
     $(this).toggleClass('active');
     if ($(this).hasClass('active')) {
@@ -38,16 +38,12 @@ $(function() {
   });
 });
 /*課題5*/
-$(function() {
-  $().click(function () {
-    if ($(".Mac:first").is(":hidden")) {
-      $(".Mac").slideDown("slow");
-    } else {
-      $(".Mac").hide();
-    }
-  });
+$(function(){
+    $(".menu > ul > li").hover(function(e){
+          $(this).children("ul").stop(true, false).fadeToggle(150);
+          e.preventDefault();
+    });
 });
-
 /*課題7*/
 $(function() {
 	$('.tab li').click(function() {
