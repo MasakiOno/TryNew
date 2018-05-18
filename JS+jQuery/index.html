@@ -8,6 +8,13 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
 integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/task.js"></script>
 </head>
 
 <body>
@@ -85,7 +92,7 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
     <div id="contents2"><!--3 モーダル-->
       <div id="modal_button">③モーダル</div>
     </div>
-    <div id="slider1" class="carousel slide" data-ride="carousel"><!--6-1 オート系スライドショー(bootstrap)-->
+    <div id="slider1" class="carousel slide" data-ride="carousel" data-interval="3000"><!--6-1 オート系スライドショー(bootstrap)-->
       <p>⑥-1オート系スライドショー(bootstrap)</p>
       <div class="carousel-inner">
         <div class="item active">
@@ -160,19 +167,19 @@ integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/
     <div class="nameData"><!--8 Ajax、json-->
       <p>⑧Ajax、json</p>
       <p>映画　コマンドー　主要キャスト(テレビ朝日版吹き替え)</p>
-      <div class="Cr_none">Chromeのローカル読み込みではこれ以降の文字が表示されません。<br>Chrome以外のブラウザでお願いします。</div>
+      <div class="Cr_none">Chromeのローカル読み込みではボタンを押しても表示されません。
+        <br>Chrome以外のブラウザでお願いします。</div>
+      <table id="tbl" border="1">
+        <tr>
+            <th>No.</th><th>登場人物</th><th>日本語吹き替え</th>
+        </tr>
+      </table>
+      <input id="btn_1" type="button" value="データ取得" />
     </div>
+
   </div>
   <div id="uptop" href="#Mega"><!--1 スムーススクロール -->
     <div class="textarea">①トップへ</div>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/task.js"></script>
 </body>
 </html>

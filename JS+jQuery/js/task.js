@@ -58,12 +58,21 @@ $(function() {
 	});
 });
 /*課題8*/
-$(function(){
-  $.getJSON("json/task.json", {name: "chara"}, function(data){
-  	var dat = data.charas;
-    $(".nameData").append("<table><tr>");
-  	$.each(dat, function(i){
-      $(".nameData").append("<td>id: " + dat[i].id + "　キャスト: " + dat[i].chara + "　　(CV: " + dat[i].cv + ")</td>");
+$(function() {
+        $("#btn_1").click(function(){
+            $.getJSON("json/task.json", function(json){
+                var rows = "";
+
+                for (i = 0; i < json.length; i++) {
+                    rows += "<tr>";
+                    for (j = 0; j < json[i].length; j++) {
+                        rows += "<td>";
+                        rows += json[i][j];
+                        rows += "</td>";
+                    }
+                    rows += "</tr>";
+                }
+                $("#tbl").append(rows);
+            });
+        });
     });
-    $(".nameData").append("</tr></table>");
-  });  });
