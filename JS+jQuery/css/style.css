@@ -382,10 +382,11 @@ li.tab_select{
   background-color: #ccc;
 }
 .Cr_none{
-  display: none;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-.Cr_none{
   display: inline;
+}
+
+@-moz-document url-prefix(){
+  .Cr_none{
+    display: none;
     }
 }

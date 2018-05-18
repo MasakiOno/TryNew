@@ -59,20 +59,17 @@ $(function() {
 });
 /*課題8*/
 $(function() {
-        $("#btn_1").click(function(){
-            $.getJSON("json/task.json", function(json){
-                var rows = "";
-
-                for (i = 0; i < json.length; i++) {
-                    rows += "<tr>";
-                    for (j = 0; j < json[i].length; j++) {
-                        rows += "<td>";
-                        rows += json[i][j];
-                        rows += "</td>";
-                    }
-                    rows += "</tr>";
-                }
-                $("#tbl").append(rows);
-            });
-        });
-    });
+  $.getJSON("json/task.json", function(json){
+    var rows = "";
+    for (i = 0; i < json.length; i++) {
+        rows += "<tr>";
+        for (j = 0; j < json[i].length; j++) {
+            rows += "<td>";
+            rows += json[i][j];
+            rows += "</td>";
+        }
+        rows += "</tr>";
+    }
+    $("#tbl").append(rows);
+  });
+});
